@@ -59,7 +59,3 @@ install(TARGETS xsolver-C
 # 2. install the header file
 file(GLOB MY_HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/*.h")
 install(FILES ${MY_HEADERS} DESTINATION include)
-
-# 3.install the extern library bolsig_x86_64.so
-# install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/bolsig_x86_64.so
-#         DESTINATION lib)
