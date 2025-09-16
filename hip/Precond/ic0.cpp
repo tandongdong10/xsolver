@@ -1,4 +1,6 @@
 #include "ic0.h"
+double solve_l_time;
+double solve_u_time;
 template<typename T>
 void initLByA(int n, int *ptr, T *val, int *col, int *lPtr, T *lVal, int *lCol, T *tnorm, T droptol){
 	int len = 0;

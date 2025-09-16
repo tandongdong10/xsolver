@@ -1,4 +1,12 @@
 #include "DeviceMatrix.h"
+
+
+rocblas_handle handle;
+hipsparseHandle_t handle1;
+hipStream_t stream[13];
+int d_nthread = 256;
+int d_nblock;
+
 __global__ void getsendarrayHIP (const int d_nGhstCells, const int onebase, const double *d_a, const int* d_ptr, double *d_b)
 {
     int icell = blockIdx.x*blockDim.x + threadIdx.x;

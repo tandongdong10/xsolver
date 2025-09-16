@@ -4,8 +4,8 @@
 #include <math.h>
 #include <vector>
 #include <sys/time.h>
-double solve_l_time;
-double solve_u_time;
+extern double solve_l_time;
+extern double solve_u_time;
 using namespace std;
 /*******************init u by a, A stored all elements**************/
 template<typename T>
